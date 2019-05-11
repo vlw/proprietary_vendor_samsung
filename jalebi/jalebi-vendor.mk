@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/bin/radish:system/vendor/bin/radish \
     vendor/yu/jalebi/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/yu/jalebi/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
-    vendor/yu/jalebi/proprietary/vendor/bin/vm_bms:system/vendor/bin/vm_bms \
     vendor/yu/jalebi/proprietary/vendor/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
     vendor/yu/jalebi/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
     vendor/yu/jalebi/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
