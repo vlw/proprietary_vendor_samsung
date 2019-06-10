@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a3lte/proprietary/vendor/lib/hw/sensors.vendor.msm8916.so:/system/vendor/lib/hw/sensors.vendor.msm8916.so \
     vendor/samsung/a3lte/proprietary/vendor/lib/hw/vendor.samsung.hardware.nfc@1.0-impl.so:/system/vendor/lib/hw/vendor.samsung.hardware.nfc@1.0-impl.so \
     vendor/samsung/a3lte/proprietary/vendor/lib/vendor.samsung.hardware.nfc@1.0.so:/system/vendor/lib/vendor.samsung.hardware.nfc@1.0.so \
+    vendor/samsung/a3lte/proprietary/vendor/lib/libalgobsx.so:/system/vendor/lib/libalgobsx.so \
     vendor/samsung/a3lte/proprietary/vendor/lib/libsecnativefeature.so:/system/vendor/lib/libsecnativefeature.so \
     vendor/samsung/a3lte/proprietary/vendor/etc/nfc/sec_s3fwrn5_rfreg.bin:/system/vendor/etc/nfc/sec_s3fwrn5_rfreg.bin \
     vendor/samsung/a3lte/proprietary/vendor/firmware/nfc/sec_s3fwrn5_firmware.bin:/system/vendor/firmware/nfc/sec_s3fwrn5_firmware.bin
