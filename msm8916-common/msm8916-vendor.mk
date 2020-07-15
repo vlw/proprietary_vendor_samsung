@@ -31,10 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
     vendor/samsung/msm8916-common/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
     vendor/samsung/msm8916-common/proprietary/vendor/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:system/vendor/firmware/cpp_firmware_v1_1_1.fw \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/cpp_firmware_v1_1_6.fw:system/vendor/firmware/cpp_firmware_v1_1_6.fw \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:system/vendor/firmware/cpp_firmware_v1_2_0.fw \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:system/vendor/firmware/cpp_firmware_v1_4_0.fw \
     vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
     vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
     vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
@@ -71,9 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libactuator_wv517s_f8865bs.so:system/vendor/lib/libactuator_wv517s_f8865bs.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libactuator_wv517s_f8865bs_camcorder.so:system/vendor/lib/libactuator_wv517s_f8865bs_camcorder.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libactuator_wv517s_f8865bs_camera.so:system/vendor/lib/libactuator_wv517s_f8865bs_camera.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
@@ -83,19 +76,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_gc2355_blx_ffln_78_common.so:system/vendor/lib/libchromatix_gc2355_blx_ffln_78_common.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_gc2355_blx_ffln_78_default_video.so:system/vendor/lib/libchromatix_gc2355_blx_ffln_78_default_video.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_gc2355_blx_ffln_78_preview.so:system/vendor/lib/libchromatix_gc2355_blx_ffln_78_preview.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_common.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_common.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_default_video.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_default_video.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_hfr_120fps.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_hfr_120fps.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_hfr_60fps.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_hfr_60fps.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_hfr_90fps.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_hfr_90fps.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_liveshot.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_liveshot.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_preview.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_preview.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_snapshot.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_snapshot.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_video_hd.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_video_hd.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libchromatix_ov8865_qtech_baly_6c_zsl.so:system/vendor/lib/libchromatix_ov8865_qtech_baly_6c_zsl.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
@@ -120,35 +100,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_gc2355_blx_ffln_78.so:system/vendor/lib/libmmcamera_gc2355_blx_ffln_78.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_ov8865_qtech_baly_6c.so:system/vendor/lib/libmmcamera_ov8865_qtech_baly_6c.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_qtech_ov8865_f8865bs_eeprom.so:system/vendor/lib/libmmcamera_qtech_ov8865_f8865bs_eeprom.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
@@ -178,6 +133,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm8916-common/proprietary/vendor/lib/libarccamera.so:system/vendor/lib/libarccamera.so \
+    vendor/samsung/msm8916-common/proprietary/vendor/lib/libarcsoft_night_shot_ex.so:system/vendor/lib/libarcsoft_night_shot_ex.so \
+    vendor/samsung/msm8916-common/proprietary/vendor/lib/libarcsoft_panorama_burstcapture.so:system/vendor/lib/libarcsoft_panorama_burstcapture.so \
+    vendor/samsung/msm8916-common/proprietary/vendor/lib/libarcsoft_selfie_camera_lite.so:system/vendor/lib/libarcsoft_selfie_camera_lite.so \
+    vendor/samsung/msm8916-common/proprietary/vendor/lib/libarcsoft_wideselfie.so:system/vendor/lib/libarcsoft_wideselfie.so
+
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
