@@ -146,4 +146,5 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
     libtime_genoff \
-    TimeService
+    TimeService \
+    keystore.qcom
