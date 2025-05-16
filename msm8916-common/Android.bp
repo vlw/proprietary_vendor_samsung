@@ -1,0 +1,159 @@
+
+soong_namespace {
+}
+
+cc_prebuilt_library_shared {
+	name: "libdsi_netctrl",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libdsi_netctrl.so"],
+		},
+	},
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_cci",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
+		},
+	},
+	shared_libs: ["libc", "libcutils", "liblog", "libm", "libstdc++", "libutils"],
+	// TODO "libqmi_client_qmux", "libqmi_encdec"
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_csi",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_csi.so"],
+		},
+	},
+	shared_libs: ["libc", "libcutils", "liblog", "libm", "libstdc++", "libutils"],
+	// TODO "libqmi_encdec"
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_common_so",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
+		},
+	},
+	shared_libs: ["libc", "libcutils", "libm", "libstdc++", "libutils"],
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmiservices",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmiservices.so"],
+		},
+	},
+	shared_libs: ["libc", "libidl", "libm", "libstdc++"],
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libidl",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libidl.so"],
+		},
+	},
+	shared_libs: ["libc", "libm", "libstdc++"],
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libtime_genoff",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libtime_genoff.so"],
+		},
+	},
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "libm"],
+	allow_undefined_symbols: true,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libloc_api_v02",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libloc_api_v02.so"],
+		},
+	},
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "libloc_ds_api", "libm", "libqmi_cci", "libqmi_common_so", "libqmi_csi", "libutils"],
+	prefer: true,
+	soc_specific: true,
+	allow_undefined_symbols: true,
+	check_elf_files: false,
+	// "libgps.utils", "libloc_core" TODO convert to blueprint
+}
+
+cc_prebuilt_library_shared {
+	name: "libloc_ds_api",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libloc_ds_api.so"],
+		},
+	},
+	shared_libs: ["libc", "libcutils", "libdsi_netctrl", "libm", "libqmi_cci", "libqmi_common_so", "libqmi_csi", "libqmiservices", "libstdc++", "libutils"],
+	//TODO "libgps.utils"
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+
