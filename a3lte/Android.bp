@@ -1,0 +1,17 @@
+// SM-A300FU A300FUXXU1CSG3 /system/lib/libevs_float.so, unmodified.
+package { default_applicable_licenses: ["a3lte_evs_blob_license"] }
+license {
+    name: "a3lte_evs_blob_license",
+    license_kinds: ["legacy_proprietary"],
+}
+cc_prebuilt_library_shared {
+    name: "libevs_float",
+    srcs: ["proprietary/lib/libevs_float.so"],
+    compile_multilib: "32",
+    shared_libs: ["libc", "libm", "libstdc++"],
+    strip: { none: true },
+    // Legacy __aeabi_uldivmod is exported by the device's ARM32 bionic libc
+    // (bionic/libc/libc.map.txt), but absent from the build-time stub surface.
+    // Native dlopen + 250-frame encode/decode was verified on SM-A300FU.
+    allow_undefined_symbols: true,
+}
