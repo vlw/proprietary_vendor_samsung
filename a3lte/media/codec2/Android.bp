@@ -18,3 +18,16 @@ cc_library_shared {
     min_sdk_version: "29",
     apex_available: ["//apex_available:platform", "com.android.media.swcodec"],
 }
+
+cc_library_shared {
+    name: "liba3_codec2_vp9_rowmt",
+    relative_install_path: "a3codec-build",
+    stem: "libcodec2_soft_vp9dec",
+    defaults: ["libcodec2_soft-defaults"],
+    srcs: ["C2A3VpxDec.cpp"],
+    cflags: ["-DVP9"],
+    shared_libs: ["libvpx"],
+    compile_multilib: "32",
+    min_sdk_version: "29",
+    apex_available: ["//apex_available:platform", "com.android.media.swcodec"],
+}

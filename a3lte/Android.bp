@@ -38,3 +38,17 @@ a3_software_decoder_prebuilt {
     enabled: false,
     soong_config_variables: { native_decoders: { prefer: true, enabled: true } },
 }
+
+a3_software_decoder_prebuilt {
+    name: "libcodec2_soft_vp9dec",
+    srcs: ["media/prebuilt/libcodec2_soft_vp9dec.so"],
+    licenses: ["a3_media_codec_license"],
+    compile_multilib: "32",
+    min_sdk_version: "29",
+    apex_available: ["//apex_available:platform", "com.android.media.swcodec"],
+    shared_libs: ["libcodec2_soft_common", "libcodec2_vndk", "libcodec2", "libbase", "libcutils", "liblog", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libutils", "libvpx", "libc++", "libc", "libm", "libdl"],
+    strip: { none: true },
+    prefer: false,
+    enabled: false,
+    soong_config_variables: { native_decoders: { prefer: true, enabled: true } },
+}
