@@ -15,3 +15,26 @@ cc_prebuilt_library_shared {
     // Native dlopen + 250-frame encode/decode was verified on SM-A300FU.
     allow_undefined_symbols: true,
 }
+
+// A3-only generated prebuilt preference: replace the Codec2 AV1 backend inside
+// the existing media package without editing framework or APEX sources.
+soong_config_module_type {
+    name: "a3_software_decoder_prebuilt",
+    module_type: "cc_prebuilt_library_shared",
+    config_namespace: "a3_media",
+    bool_variables: ["native_decoders"],
+    properties: ["prefer", "enabled"],
+}
+a3_software_decoder_prebuilt {
+    name: "libcodec2_soft_av1dec_gav1",
+    srcs: ["media/prebuilt/libcodec2_soft_av1dec_gav1.so"],
+    licenses: ["a3_media_codec_license", "a3_dav1d_license"],
+    compile_multilib: "32",
+    min_sdk_version: "29",
+    apex_available: ["//apex_available:platform", "com.android.media.swcodec"],
+    shared_libs: ["libcodec2_soft_common", "libcodec2_vndk", "libcodec2", "libbase", "libcutils", "liblog", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl"],
+    strip: { none: true },
+    prefer: false,
+    enabled: false,
+    soong_config_variables: { native_decoders: { prefer: true, enabled: true } },
+}

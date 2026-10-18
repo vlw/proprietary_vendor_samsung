@@ -1,0 +1,20 @@
+package { default_applicable_licenses: ["a3_media_codec_license"] }
+license {
+    name: "a3_media_codec_license",
+    visibility: ["//visibility:public"],
+    license_kinds: ["SPDX-license-identifier-Apache-2.0"],
+    license_text: ["LICENSE"],
+}
+cc_library_shared {
+    name: "liba3_codec2_av1_dav1d",
+    relative_install_path: "a3codec-build",
+    visibility: ["//visibility:public"],
+    stem: "libcodec2_soft_av1dec_gav1",
+    defaults: ["libcodec2_soft-defaults"],
+    srcs: ["C2A3Dav1dDec.cpp"],
+    cflags: ["-DCODECNAME=\"c2.android.av1.decoder\""],
+    static_libs: ["liba3_dav1d_common"],
+    compile_multilib: "32",
+    min_sdk_version: "29",
+    apex_available: ["//apex_available:platform", "com.android.media.swcodec"],
+}
