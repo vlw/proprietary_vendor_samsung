@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera from MM (A300FU)
 PRODUCT_COPY_FILES += \
+    vendor/samsung/a3lte/proprietary/vendor/lib/libsecjpegboard.so:system/vendor/lib/libsecjpegboard.so \
+    vendor/samsung/a3lte/proprietary/vendor/lib/libQjpeg.so:system/vendor/lib/libQjpeg.so \
+    vendor/samsung/a3lte/proprietary/vendor/lib/libsupershot.so:system/vendor/lib/libsupershot.so \
     vendor/samsung/a3lte/proprietary/vendor/etc/B05QL_s5k5e3yx_module_info.xml:system/vendor/etc/B05QL_s5k5e3yx_module_info.xml \
     vendor/samsung/a3lte/proprietary/vendor/etc/G08QU_imx219_module_info.xml:system/vendor/etc/G08QU_imx219_module_info.xml \
     vendor/samsung/a3lte/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:system/vendor/firmware/cpp_firmware_v1_1_1.fw \

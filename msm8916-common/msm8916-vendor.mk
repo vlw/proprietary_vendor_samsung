@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
-    vendor/samsung/msm8916-common/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
+    $(if $(DEVICE_CAMERA_DAEMON),$(DEVICE_CAMERA_DAEMON),vendor/samsung/msm8916-common/proprietary/vendor/bin/mm-qcamera-daemon):system/vendor/bin/mm-qcamera-daemon \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/radish:system/vendor/bin/radish \
@@ -88,8 +88,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
+    $(if $(DEVICE_CAMERA_LIBS),$(DEVICE_CAMERA_LIBS)/libjpegdhw.so,vendor/samsung/msm8916-common/proprietary/vendor/lib/libjpegdhw.so):system/vendor/lib/libjpegdhw.so \
+    $(if $(DEVICE_CAMERA_LIBS),$(DEVICE_CAMERA_LIBS)/libjpegehw.so,vendor/samsung/msm8916-common/proprietary/vendor/lib/libjpegehw.so):system/vendor/lib/libjpegehw.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
@@ -100,8 +100,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
+    $(if $(DEVICE_CAMERA_LIBS),$(DEVICE_CAMERA_LIBS)/libmmjpeg.so,vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmjpeg.so):system/vendor/lib/libmmjpeg.so \
+    $(if $(DEVICE_CAMERA_LIBS),$(DEVICE_CAMERA_LIBS)/libmmqjpeg_codec.so,vendor/samsung/msm8916-common/proprietary/vendor/lib/libmmqjpeg_codec.so):system/vendor/lib/libmmqjpeg_codec.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -109,7 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/msm8916-common/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    $(if $(DEVICE_CAMERA_LIBS),$(DEVICE_CAMERA_LIBS)/libqomx_jpegenc.so,vendor/samsung/msm8916-common/proprietary/vendor/lib/libqomx_jpegenc.so):system/vendor/lib/libqomx_jpegenc.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
