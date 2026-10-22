@@ -106,12 +106,3 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a3lte/proprietary/vendor/lib/libmmcamera_zc533_eeprom.so:system/vendor/lib/libmmcamera_zc533_eeprom.so \
     vendor/samsung/a3lte/proprietary/vendor/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
     vendor/samsung/a3lte/proprietary/vendor/lib/libqomx_core.so:system/vendor/lib/libqomx_core.so
-
-# SM-A300FU Android 6 NON-HLOS Venus VIDEO.VE.1.8-00155, matched signed set.
-PRODUCT_COPY_FILES += \
-    vendor/samsung/a3lte/proprietary/vendor/firmware/venus/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/venus/venus.mdt \
-    vendor/samsung/a3lte/proprietary/vendor/firmware/venus/venus.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/venus/venus.b00 \
-    vendor/samsung/a3lte/proprietary/vendor/firmware/venus/venus.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/venus/venus.b01 \
-    vendor/samsung/a3lte/proprietary/vendor/firmware/venus/venus.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/venus/venus.b02 \
-    vendor/samsung/a3lte/proprietary/vendor/firmware/venus/venus.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/venus/venus.b03 \
-    vendor/samsung/a3lte/proprietary/vendor/firmware/venus/venus.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/venus/venus.b04

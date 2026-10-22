@@ -33,13 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm8916-common/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
     vendor/samsung/msm8916-common/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
     vendor/samsung/msm8916-common/proprietary/vendor/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b03:system/vendor/firmware/venus.b03 \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b04:system/vendor/firmware/venus.b04 \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
-    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.mdt:system/vendor/firmware/venus.mdt \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/samsung/msm8916-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/samsung/msm8916-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
@@ -148,3 +141,16 @@ PRODUCT_PACKAGES += \
     libdsi_netctrl \
     libtime_genoff \
     keystore.qcom
+
+# A3 signed subsystem images must come from its matching firmware partition.
+# Preserve legacy packaging for other products using this common vendor tree.
+ifneq ($(DEVICE_USES_NATIVE_VENUS_FIRMWARE),true)
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00 \
+    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01 \
+    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02 \
+    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b03:system/vendor/firmware/venus.b03 \
+    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.b04:system/vendor/firmware/venus.b04 \
+    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
+    vendor/samsung/msm8916-common/proprietary/vendor/firmware/venus.mdt:system/vendor/firmware/venus.mdt
+endif

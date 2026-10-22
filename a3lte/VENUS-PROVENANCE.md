@@ -1,3 +1,7 @@
+> Historical record. As of 2026-10-22 all A3 variants use the native firmware
+> partition. The FU Venus import and every global firmware override have been
+> removed. See device/samsung/a3lte/media/NATIVE_FIRMWARE_POLICY.md.
+
 # SM-A300FU Venus firmware
 
 Unmodified signed Venus VIDEO.VE.1.8-00155 from Android 6.0.1:
